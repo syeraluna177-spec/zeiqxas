@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZaiJefyan | Website Pribadi</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+html{scroll-behavior:smooth}
+body{
+background:radial-gradient(circle at top,#1e293b,#020617);
+color:#e5e7eb;
+overflow-x:hidden
+}
+.bg-glow{
+position:fixed;width:650px;height:650px;
+background:radial-gradient(circle,rgba(56,189,248,.25),transparent 70%);
+animation:float 10s ease-in-out infinite;z-index:0
+}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-40px)}}
+section{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:60px 20px;
+position:relative;
+z-index:1
+}
+.card{
+width:100%;max-width:850px;
+background:rgba(255,255,255,.06);
+backdrop-filter:blur(14px);
+border-radius:24px;
+padding:50px;
+box-shadow:0 30px 60px rgba(0,0,0,.6);
+animation:fade 1s ease forwards
+}
+@keyframes fade{from{opacity:0;transform:scale(.9)}to{opacity:1;transform:scale(1)}}
+.center{text-align:center}
+h1{font-size:34px;margin-bottom:14px}
+p{color:#9ca3af;font-size:15px;line-height:1.7}
+.btn{
+display:inline-block;margin-top:30px;
+padding:14px 40px;
+background:linear-gradient(135deg,#38bdf8,#0ea5e9);
+color:#020617;text-decoration:none;
+border-radius:40px;transition:.3s
+}
+.btn:hover{transform:translateY(-3px);box-shadow:0 15px 35px rgba(56,189,248,.6)}
+.profile-img{
+width:120px;height:120px;border-radius:50%;
+object-fit:cover;margin-bottom:20px;
+box-shadow:0 0 25px rgba(56,189,248,.6)
+}
+.section{margin-top:30px}
+.section h2{color:#38bdf8;margin-bottom:10px}
+ul{list-style:none}
+ul li::before{content:"• ";color:#38bdf8}
+.project{
+background:rgba(255,255,255,.04);
+padding:25px;border-radius:18px;margin-bottom:25px
+}
+footer{text-align:center;margin-top:40px;font-size:12px;color:#6b7280}
+</style>
+</head>
+
+<body>
+
+<div class="bg-glow"></div>
+
+<!-- LANDING -->
+<section id="home">
+<div class="card center">
+<h1>Selamat Datang</h1>
+<p>Terima kasih telah mampir.<br>Klik tombol di bawah untuk mengenal saya.</p>
+<a href="#profil" class="btn">MASUK</a>
+<footer>© 2025 | ZaiJefyan</footer>
+</div>
+</section>
+
+<!-- DATA DIRI -->
+<section id="profil">
+<div class="card center">
+<img src="https://drive.google.com/uc?id=10u509KmQ1EM-No4GsJm9kugG-2ejDclp" class="profile-img">
+<h1>Zainal Jefi A</h1>
+<p>Pelajar | Mahasiswa | Pekerja</p>
+
+<div class="section">
+<h2>👤 Data Diri</h2>
+<p>Nama: Zainal Jefi A<br>Tanggal Lahir: 19-11-2006<br>Alamat: Nganjuk, Jawa Timur</p>
+</div>
+
+<div class="section">
+<h2>📖 Tentang Saya</h2>
+<p>Tertarik pada dunia teknologi, desain, dan pengembangan website modern.</p>
+</div>
+
+<div class="section">
+<h2>⚙️ Keahlian</h2>
+<ul>
+<li>HTML & CSS</li>
+<li>UI Design</li>
+<li>Responsive Web</li>
+</ul>
+</div>
+
+<a href="#project" class="btn">Lanjut ke Project</a>
+</div>
+</section>
+
+<!-- PROJECT -->
+<section id="project">
+<div class="card">
+<div class="center">
+<h1>Project Saya</h1>
+<p>Kumpulan project yang telah saya kerjakan</p>
+</div>
+
+<div class="project">
+<h2>Kiriman Surat Cinta</h2>
+<p>Website dengan gaya bahasa hati</p>
+<a class="btn" href="https://syeraluna177-spec.github.io/gloo.flour/cinta.html">Buka Project</a>
+</div>
+
+<div class="project">
+<h2>Website Tampilan Game</h2>
+<p>Game personal dengan gaya modern</p>
+<a class="btn" href="https://syeraluna177-spec.github.io/gloo.flour/game.html">Buka Project</a>
+</div>
+
+<div class="project">
+<h2>Mentahan Animasi</h2>
+<p>Animasi bunga bulat</p>
+<a class="btn" href="https://syeraluna177-spec.github.io/gloo.flour/animasi.html">Buka</a>
+<a class="btn" href="#thanks">Lanjutkan</a>
+</div>
+</div>
+</section>
+
+<!-- TERIMA KASIH -->
+<section id="thanks">
+<div class="card center">
+<h1>Terima Kasih</h1>
+<p>Terima kasih telah mengunjungi website ini.<br>Sampai jumpa kembali.</p>
+<a href="#home" class="btn">Kembali ke Awal</a>
+<footer>© 2025 | ZaiJefyan</footer>
+</div>
+</section>
+
+</body>
+</html>
